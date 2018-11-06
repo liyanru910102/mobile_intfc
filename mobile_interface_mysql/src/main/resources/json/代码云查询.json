@@ -1,0 +1,18 @@
+[
+	{
+		"stock_code": "000001",
+		"stock_mark": "R",
+		"stock_market": "1",
+		"stock_name": "平安银行",
+		"stock_pinyin": "PAYH",
+		"stock_type": "1"
+	},
+	{
+		"stock_code": "000001",
+		"stock_mark": "",
+		"stock_market": "2",
+		"stock_name": "上证指数",
+		"stock_pinyin": "SZZS",
+		"stock_type": "16"
+	}
+]

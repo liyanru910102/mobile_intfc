@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<suite name="Suite" verbose="1">
+	<listeners>
+		<listener class-name="zxjt.inte.testng.listener.Listener" />
+
+	</listeners>
+<!--注意事项1：普通交易登录和融资融券登录的可以不填needlogin和  filebelongto必填-->
+<!--注意事项2：普通交易登录name="PTJYLogin" 融资融券name="RRLogin"，不可更改-->
+    <!-- 登录 -->
+	<test enabled="false" name="PTJYLogin" >
+		<classes>
+			<class name="zxjt.inte.web.A00LoginTest" />
+		</classes>
+	</test>
+
+<!--注意事项3：出登录以外的test模块，needlogin和  filebelongto必填-->
+    <!-- 股票买卖 -->
+	<test enabled="true" name="TestGPMM" needlogin="false" filebelongto="PTJYLogin">
+		<classes>
+			<class name="zxjt.inte.web.A01GPMMTest" />
+		</classes>
+	</test>
+	
+    <!-- 沪深港股通 -->
+	<test enabled="false" name="TestHSGGT" needlogin="true" filebelongto="PTJYLogin">
+		<classes>
+			<class name="zxjt.inte.web.B00HSGGTCCCXTest" />
+			<class name="zxjt.inte.web.B01HSGGTJTZTXXCXTest" />
+			<class name="zxjt.inte.web.B02HSGGTKMMSLCXTest" />
+			<class name="zxjt.inte.web.B03HSGGTZJCXTest" />
+			<class name="zxjt.inte.web.B04HSGGTDRWTCXTest" />
+			<class name="zxjt.inte.web.B05HSGGTDRCJCXTest" />
+			<class name="zxjt.inte.web.B06HSGGTLSWTCXTest" />
+			<class name="zxjt.inte.web.B07HSGGTLSCJCXTest" />
+			<class name="zxjt.inte.web.B08HSGGTWTXDTest" />
+			<class name="zxjt.inte.web.B09HSGGTWTCDTest" />
+		</classes>
+	</test>
+	
+    <!--手机行情 -->
+	<test enabled="false" name="TestWW" needlogin="false">
+		<classes>
+			<class name="zxjt.inte.web.W00HQZXGHQTest" />
+			<class name="zxjt.inte.web.W01DMLTest" />
+			<class name="zxjt.inte.web.W02BKPHTest" />
+			<class name="zxjt.inte.web.W03GPPHTest" />
+			<class name="zxjt.inte.web.W04BKPHIndexTest" />
+			<class name="zxjt.inte.web.W05GGZHTest" />
+			<class name="zxjt.inte.web.W06YCXTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "required": true,
+  "type": "array",
+  "items": {
+    "id": "0",
+    "type": "object",
+    "required": true,
+    "properties": {
+      "stock_type": {
+        "id": "stock_type",
+        "type": "string",
+        "required": true
+      },
+      "stock_market": {
+        "id": "stock_market",
+        "type": "string",
+        "required": true
+      },
+      "stock_name": {
+        "id": "stock_name",
+        "type": "string",
+        "required": true
+      },
+      "stock_pinyin": {
+        "id": "stock_pinyin",
+        "type": "string",
+        "required": true
+      },
+      "stock_mark": {
+        "id": "stock_mark",
+        "type": "string",
+        "required": true
+      },
+      "stock_code": {
+        "id": "stock_code",
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}

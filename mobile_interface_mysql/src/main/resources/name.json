@@ -1,0 +1,21 @@
+{
+  "A01GPMMTest_A01GPMM": "执行股票买卖接口A01",
+  "A00LoginTest_A00Login":"执行普通交易登录接口A00",
+  "W00HQZXGHQTest_W00ZXGHQ":"执行自选股行情信息查询W00",
+  "W01DMLTest_W01DML":"执行代码链查询W01",
+  "W02BKPHTest_W02BKPH":"执行板块排行W02",
+  "W03GPPHTest_W03GPPH":"执行股票排行W03",
+  "W04BKPHIndexTest_W04BKPHIndex":"执行板块排行索引W04",
+  "W05GGZHTest_W05GGZH":"执行个股综合W05",
+  "W06YCXTest_W06YCX":"执行代码云查询W06",
+  "B00HSGGTCCCXTest_B00HsggtCccx":"沪深港股通持仓查询B00",
+  "B01HSGGTJTZTXXCXTest_B01HsggtJyztxxcx":"沪深港股通交易状态信息查询B01",
+  "B02HSGGTKMMSLCXTest_B02HsggtKmmslcx":"沪深港股通可买卖数量查询B02",
+  "B03HSGGTZJCXTest_B03HsggtZjcx":"沪深港股通资金查询B03",
+  "B04HSGGTDRWTCXTest_B04HsggtDrwtcx":"沪深港股通当日委托查询B04",
+  "B05HSGGTDRCJCXTest_B05HsggtDrcjcx":"沪深港股通当日成交查询B05",
+  "B06HSGGTLSWTCXTest_B06HsggtLswtcx":"沪深港股通历史委托查询B06",
+  "B07HSGGTLSCJCXTest_B07HsggtLscjcx":"沪深港股通历史成交查询B07",
+  "B08HSGGTWTXDTest_B08HsggtWtxd":"沪深港股通委托下单B08",
+  "B09HSGGTWTCDTest_B09HsggtWtcd":"沪深港股通委托撤单B09"
+}

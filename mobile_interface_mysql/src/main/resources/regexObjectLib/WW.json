@@ -1,0 +1,163 @@
+{
+	"代码云查询": [
+		{
+			"stock_code": "^000001$",
+			"stock_mark": "^$|^R$",
+			"stock_market": "^([0-9]{1}|[1]{1}[0-6]{1}|[3]{1}[2-9]{1}|[4]{1}[0-3]{1})$",
+			"stock_name": "\\S+",
+			"stock_pinyin": "^[A-Za-z0-9]+$",
+			"stock_type": "^16$|^1$"
+		}
+	],
+	"自选股行情查询": [
+		{
+			"wType": "wType",
+			"bSort": "bSort",
+			"bDirect": "bDirect",
+			"wFrom": "wFrom",
+			"wCount": "wCount",
+			"fieldsBitMap": "fieldsBitMap",
+			"wTotalCount": "^[0-9]+$",
+			"marketID": "^([0-9]{1}|[1]{1}[0-6]{1}|[3]{1}[2-9]{1}|[4]{1}[0-3]{1})$",
+			"stock_code": "^[A-Za-z]?[0-9]+$",
+			"stock_name": "\\S+",
+			"pszMark": "^$|^HK$|^HGT$|^R$|^SGT$",
+			"dataArr_wType": "^[0-9]+$",
+			"nZrsp": "^[0-9]+$",
+			"nJrkp": "^[0-9]+$",
+			"nZjcj": "^[0-9]+$",
+			"nZd": "^-?[0-9]+$",
+			"nZdf": "^-?[0-9]+$",
+			"bSuspended": "true|false",
+			"nRqSj": "^[0-9]+$",
+			"nLimUp": "^[0-9]+$",
+			"nLimDown": "^[0-9]+$",
+			"blockID": "^0$",
+			"blockName": "^其他行业$",
+			"is_ggt_object": "true|false"
+		}
+	],
+	"代码链查询": [
+		{
+			"version": "^[0-9]+$",
+			"market_id": "^([0-9]{1}|[1]{1}[0-6]{1}|[3]{1}[2-9]{1}|[4]{1}[0-3]{1})$",
+			"code_type": "^(0|1|2|4|8|16|32|64|128|256|257|1024|1028|1029|2048|4096|8192|[5]{1}[1]{1}[2-9]{1}|[5]{1}[2]{1}[0-9]{1}|530)$",
+			"codeList_add_repeated_code": "^[A-Za-z]?[0-9]+$",
+			"pinyin": "^[A-Za-z0-9]+$",
+			"pszMark": "^$|^HK$|^HGT$|^R$|^SGT$",
+			"name": "\\S+",
+			"codeList_del_repeated_code": "^initCodeList$"
+		}
+	],
+	"板块排行": [
+		{
+			"wType": "wType",
+			"bSort": "bSort",
+			"bDirect": "bDirect",
+			"wFrom": "wFrom",
+			"wCount": "wCount",
+			"fieldsBitMap": "fieldsBitMap",
+			"wTotalCount": "^[0-9]+$",
+			"fZdf": "^-?[0-9]+$",
+			"sCode": "^[0-9]+$",
+			"pszBkName": "\\S+",
+			"sStockCode": "^[0-9]+$",
+			"pszStockName": "\\S+",
+			"first_zdf": "^[0-9]+$",
+			"first_price": "^[0-9]+$"
+		}
+	],
+	"股票排行": [
+		{
+			"wType": "wType",
+			"bSort": "bSort",
+			"bDirect": "bDirect",
+			"wFrom": "wFrom",
+			"wCount": "wCount",
+			"fieldsBitMap": "fieldsBitMap",
+			"marketID": "^([0-9]{1}|[1]{1}[0-6]{1}|[3]{1}[2-9]{1}|[4]{1}[0-3]{1})$",
+			"stock_code": "^[A-Za-z]?[0-9]+$",
+			"stock_name": "\\S+",
+			"pszMark": "^$|^HK$|^HGT$|^R$|^SGT$",
+			"dataArr_wType": "^[0-9]+$",
+			"nZrsp": "^[0-9]+$",
+			"nJrkp": "^[0-9]+$",
+			"nZgcj": "^[0-9]+$",
+			"nZdcj": "^[0-9]+$",
+			"nZjcj": "^[0-9]+$",
+			"nCjss": "^[0-9]+$",
+			"nZf": "^[0-9]+$",
+			"nCjje": "^[0-9]+$",
+			"nZd": "^[0-9]+$",
+			"nZdf": "^[0-9]+$",
+			"nLb": "^[0-9]+$",
+			"n5Min": "^-?[0-9]+$",
+			"bSuspended": "true|false",
+			"nHsl": "^[0-9]+$",
+			"nSyl": "^[0-9]+$",
+			"nRqSj": "^[0-9]+$",
+			"is_ggt_object": "true|false"
+		}
+	],
+	"板块排行索引": [
+		{
+			"wType": "^[0-9]+$",
+			"bSort": "bSort",
+			"bDirect": "bDirect",
+			"wFrom": "wFrom",
+			"wCount": "wCount",
+			"fieldsBitMap": "fieldsBitMap",
+			"wTotalCount": "^[0-9]+$",
+			"blockClassName": "^行业板块$|^热点概念$|^地域板块$",
+			"fZdf": "^-?[0-9]+$",
+			"sCode": "^[0-9]+$",
+			"pszBkName": "\\S+",
+			"sStockCode": "^[0-9]+$",
+			"pszStockName": "\\S+",
+			"first_zdf": "^[0-9]+$",
+			"first_price": "^[0-9]+$"
+		}
+	],
+	"个股综合": [
+		{
+			"marketID": "^([0-9]{1}|[1]{1}[0-6]{1}|[3]{1}[2-9]{1}|[4]{1}[0-3]{1})$",
+			"stock_code": "^[A-Za-z]?[0-9]+$",
+			"stock_name": "\\S+",
+			"pszMark": "^$|^HK$|^HGT$|^R$|^SGT$",
+			"wType": "^[0-9]+$",
+			"nZjcj": "^[0-9]+$",
+			"nZdf": "^[0-9]+$",
+			"bSuspended": "true|false",
+			"nRqSj": "^[0-9]{8}$",
+			"blockID": "^10$",
+			"blockName": "^工程机械$",
+			"blockZDF": "^-?[0-9]+$",
+			"is_ggt_object": "true|false",
+			"ma_price": "^[0-9]+$",
+			"wb": "^-?[0-9]+$",
+			"wc": "^-?[0-9]+$",
+			"jzc": "^\\d+$",
+			"sjl": "^\\d+$",
+			"sy": "^\\d+$",
+			"quarter": "^\\d+$",
+			"ltg": "^\\d+$",
+			"sylj": "^\\d+$",
+			"zgb": "^\\d+$",
+			"nMaxVol": "^\\d+$",
+			"nTime": "^\\d+$",
+			"timeDivision_nZjcj": "^\\d+$",
+			"timeDivision_nZdf": "^-?[0-9]+$",
+			"nCjss": "^\\d+$",
+			"nCjje": "^\\d+$",
+			"nCjjj": "^\\d+$",
+			"nDate": "^\\d+$",
+			"nZd": "^-?[0-9]+$",
+			"nBuyp": "^\\d+$",
+			"nSelp": "^\\d+$",
+			"dwTime": "^\\d+$",
+			"bCjlb": "^B$|^S$|^-$",
+			"tradeDetail_nZjcj": "^\\d+$",
+			"tradeDetail_nCjss": "^\\d+$"
+		}
+	]
+}

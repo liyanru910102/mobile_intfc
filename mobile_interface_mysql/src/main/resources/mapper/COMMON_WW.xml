@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zxjt.inte.dao.CommonWWDao">
+	<select id="getParamsInfo" resultType="CommonWW" parameterType="int">
+		<!-- 具体的sql -->
+	SELECT C.ID AS 'id',S.SERVICE_FUNCTION_ID AS 'url',C.CNAME AS 'cname'
+	,R.CVALUE AS 'cvalue',R.RID AS 'rowindex' ,C.`DESC` AS 'desc'
+	FROM t_row_ptyw_info R  , t_column_ptyw_info C,t_service_info S
+	WHERE R.ID = #{id}
+	AND S.ID = R.ID
+	AND C.ID = R.ID
+	AND R.CID = C.CID
+	AND R.RID NOT IN(
+	SELECT RID FROM t_row_ptyw_info
+	WHERE ID = #{id}
+	AND (CVALUE = 'FALSE' OR CVALUE = 'false')
+	)
+	ORDER BY R.RID ASC
+	</select>
+</mapper>
